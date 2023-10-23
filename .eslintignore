@@ -1,0 +1,6 @@
+dist/*
+public
+node_modules
+*.draft.*
+draft
+data/content.mdx
