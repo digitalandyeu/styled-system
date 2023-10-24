@@ -1,3 +1,4 @@
+import { ReactNode } from "react"
 import Image, { ImageProps } from "next/image"
 import type { MDXComponents } from "mdx/types"
 
@@ -24,12 +25,18 @@ const ResponsiveImage = (props: ImageProps | any) => (
   />
 )
 
-export function useMDXComponents(components: MDXComponents): MDXComponents {
-  const { img: _img, ..._components } = components
+export const MDXWrapperEl = (children: ReactNode) => (
+  <article className={"prose max-w-none"}>{children}</article>
+)
 
+export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    img: ResponsiveImage,
+    h1: ({ children }) => (
+      <h1 className={"heading-h1 h1 heading"}>{children}</h1>
+    ),
+    // img: ResponsiveImage,
     youtube: YouTube,
-    ..._components,
+    wrapper: ({ children }) => MDXWrapperEl(children),
+    ...components,
   }
 }

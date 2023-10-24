@@ -1,3 +1,4 @@
+import exp from "constants"
 import { ReactNode } from "react"
 import { author, name, repository } from "@/../package.json"
 import { Link } from "@/types"
@@ -12,11 +13,6 @@ export const mdxPages: Link[] = [
     title: "Mdx",
     description: "src/pages/mdx.mdx",
     href: "/mdx",
-  },
-  {
-    title: "Mdx Layout",
-    description: "src/pages/mdx-layout.mdx",
-    href: "/mdx-layout",
   },
   {
     title: "Mdx Remote",
@@ -93,3 +89,9 @@ export const packageName = `@digitalandyeu/${packageJsonData.name}`
 
 export const publicDomain = "sparkblog.vercel.app"
 export const publicURL = "https://" + publicDomain
+
+export const publicRemoteMarkdownFile =
+  "https://raw.githubusercontent.com/digitalandyeu/.github/main/profile/README.md"
+
+export const readmeBadgesFix = (content: string) =>
+  content.replace(/<!-- START BADGES -->[\s\S]*?<!-- END BADGES -->/, "")

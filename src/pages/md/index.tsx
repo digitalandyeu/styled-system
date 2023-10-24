@@ -1,33 +1,62 @@
-import { mdxPages } from "@/data"
+import { GetStaticProps } from "next"
+import Link from "next/link"
 import MainLayout from "@/layouts/MainLayout"
+import { IPost } from "@/types"
+import { ChevronRightIcon } from "@heroicons/react/24/solid/index"
+
+import { getAllPosts } from "@/lib/mdx"
 
 Md.getLayout = (page: JSX.Element) => <MainLayout>{page}</MainLayout>
 
-export default function Md() {
+interface IMdPageIndex {
+  posts: IPost[]
+}
+
+export default function Md(props: IMdPageIndex) {
+  const { posts, ..._props } = props
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24`}
-    >
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        {mdxPages.map(({ title, description, href }) => (
-          <a
-            target={"_self"}
-            key={`page-${title}`}
-            href={href}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    <ul role="list" className="divide-y divide-gray-100">
+      {posts.map(({ meta, content: _content }, index) => {
+        const { slug, title, date, ..._meta } = meta
+        return (
+          <li
+            key={`post-${index}`}
+            className="relative flex justify-between gap-x-6 px-4 py-5 hover:bg-gray-50 sm:px-6 lg:px-8"
           >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              {title}{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              {description}
-            </p>
-          </a>
-        ))}
-      </div>
-    </main>
+            <article className="flex min-w-0 gap-x-4">
+              <div className="min-w-0 flex-auto">
+                <p className="text-sm font-semibold leading-6 text-gray-900">
+                  <Link href={`/md/${slug}`}>
+                    <span className="absolute inset-x-0 -top-px bottom-0" />
+                    {title}
+                  </Link>
+                </p>
+                <p className="mt-1 flex text-xs leading-5 text-gray-500">
+                  {`md/${slug}.md`}
+                </p>
+                <p className="mt-1 text-xs leading-5 text-gray-500">
+                  Created: <time dateTime={date}>{date}</time>
+                </p>
+              </div>
+            </article>
+            <div className="flex shrink-0 items-center gap-x-4">
+              <ChevronRightIcon
+                className="h-5 w-5 flex-none text-gray-400"
+                aria-hidden="true"
+              />
+            </div>
+          </li>
+        )
+      })}
+    </ul>
   )
 }
+
+export const getStaticProps = (async (context) => {
+  const posts = getAllPosts()
+  return {
+    props: {
+      posts,
+    },
+  }
+}) satisfies GetStaticProps<IMdPageIndex>

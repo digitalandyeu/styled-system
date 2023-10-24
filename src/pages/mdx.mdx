@@ -1,3 +1,6 @@
+import MainLayout from "../layouts/MainLayout"
+import { MDXWrapperEl } from "../mdx-components"
+
 # Welcome to my MDX page!
 
 This is some **bold** and _italics_ text.
@@ -9,3 +12,8 @@ This is a list in markdown:
 - Three
 
 Checkout my React component:
+
+export default function MdxPage({ children }) {
+  console.log(children)
+  return <MainLayout>{MDXWrapperEl(children)}</MainLayout>
+}

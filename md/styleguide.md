@@ -152,65 +152,19 @@ _Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nibh eu co
 
 # Code
 
+Inline code `code`
+
 ```java
 public static void main(String[] args) {
 	//TODO
 }
 ```
 
-> \`\`\`java <br />
-> public static void main(String[] args) {<br />
-> //TODO<br />
-> }<br /> > \`\`\`<br />
-
 See more [Markdown Extras - Style Text](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#style-text)
 
 # Email
 
-[email@email.com]
-
-# Table
-
-| Column 1      | Column 2       | Column 3       |
-| ------------- | -------------- | -------------- |
-| Row 1 Column1 | Row 1 Column 2 | Row 1 Column 3 |
-| Row 2 Column1 | Row 2 Column 2 | Row 2 Column 3 |
-
-> \|Column 1|Column 2|Column 3|<br /> >\|---|---|---|<br /> >\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br /> >\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br />
-
-## Table Align
-
-## Align Center
-
-|   Column 1    |    Column 2    |    Column 3    |
-| :-----------: | :------------: | :------------: |
-| Row 1 Column1 | Row 1 Column 2 | Row 1 Column 3 |
-| Row 2 Column1 | Row 2 Column 2 | Row 2 Column 3 |
-
-> \|Column 1|Column 2|Column 3|<br /> >\|:---:|:---:|:---:|<br /> >\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br /> >\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br />
-
-## Align Left
-
-| Column 1      | Column 2       | Column 3       |
-| :------------ | :------------- | :------------- |
-| Row 1 Column1 | Row 1 Column 2 | Row 1 Column 3 |
-| Row 2 Column1 | Row 2 Column 2 | Row 2 Column 3 |
-
-> \|Column 1|Column 2|Column 3|<br /> >\|:---|:---|:---|<br /> >\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br /> >\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br />
-
-## Align Right
-
-|      Column 1 |       Column 2 |       Column 3 |
-| ------------: | -------------: | -------------: |
-| Row 1 Column1 | Row 1 Column 2 | Row 1 Column 3 |
-| Row 2 Column1 | Row 2 Column 2 | Row 2 Column 3 |
-
-> \|Column 1|Column 2|Column 3|<br /> >\|---:|---:|---:|<br /> >\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br /> >\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br />
-
-See more [Markdown Extras - Table](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table)
-
-- [Rownspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---rowspan)
-- [Colspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---colspan)
+[email@email.com](mailto:email@email.com)
 
 # Escape Characters
 
@@ -229,17 +183,6 @@ _   underscore
 !   exclamation mark
 ```
 
-# Emoji
-
-- [Emoji](emoji.md#emoji);
-  - [People](emoji.md#people) - (:blush: ; :hushed: ; :shit:);
-  - [Nature](emoji.md#nature) - (:sunny: ; :snowman: ; :dog:);
-  - [Objects](emoji.md#objects) - (:file_folder: ; :computer: ; :bell:);
-  - [Places](emoji.md#places) - (:rainbow: ; :warning: ; :statue_of_liberty:);
-  - [Symbols](emoji.md#symbols) - (:cancer: ; :x: ; :shipit:);
-- [Kaomoji](emoji.md#kaomoji);
-- [Special-Symbols](emoji.md#special-symbols);
-
 # Shields Badges
 
 :warning: _We are not responsible for this site_
@@ -252,11 +195,3 @@ See more: [https://shields.io/](https://shields.io/)
 # Markdown Editor
 
 [StackEdit](https://stackedit.io) - _StackEdit’s Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files._
-
-# Some links for more in depth learning
-
-:page_facing_up: [Markdown Extras](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#markdown---extras)
-
-:page_facing_up: [Wikipedia - Markdown](https://pt.wikipedia.org/wiki/Markdown)
-
-:page_facing_up: [Oficial](https://daringfireball.net/projects/markdown/)

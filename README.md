@@ -51,3 +51,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [Best theme NextJs : Simple](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
 - [Gist with Themes](https://gist.github.com/andriilive/dce309b39c90a6fbab53b633e421c550)
 - [TailwindCSS Typography](https://tailwindcss.com/docs/typography-plugin)
+- [contentlayer NEXTJS + Static MDX](https://contentlayer.dev/examples/nextjs)
+- [Nextra](https://github.com/shuding/nextra-docs-template)

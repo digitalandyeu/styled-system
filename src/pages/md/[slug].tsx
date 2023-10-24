@@ -1,7 +1,7 @@
 import MainLayout from "@/layouts/MainLayout"
+import { useMDXComponents } from "@/mdx-components"
 import { ChevronLeftIcon } from "@heroicons/react/24/outline"
 
-import { mdxComponentsStyled } from "@/components/MDXComponents"
 import SEO from "@/components/SEO"
 
 import "highlight.js/styles/atom-one-dark.css"
@@ -49,7 +49,7 @@ const PostPage: NextPageWithLayout<IPostPage> = ({ post }) => {
               <h1 className="text-2xl font-bold">{post.meta.title}</h1>
             </div>
 
-            <MDXRemote {...post.source} components={mdxComponentsStyled} />
+            <MDXRemote components={useMDXComponents} {...post.source} />
           </div>
         </div>
       </section>

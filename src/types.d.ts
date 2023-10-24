@@ -9,7 +9,7 @@ export interface IPostMeta {
 
 export interface IPost {
   content: string
-  meta: PostMeta
+  meta: IPostMeta
 }
 
 export type Link = {

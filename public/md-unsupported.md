@@ -1,3 +1,141 @@
+## Table
+
+### Table - _rowspan_
+
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td>row 1 - column 2</td>
+    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td>row 1 - column 2</td>
+    <td rowspan="2" align="center">row 1 & 2 - column 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+  </tr>
+</table>
+```
+
+### Table - _colspan_
+
+
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td colspan="2" align="center">row 1 - column 2 & 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+    <td>row 2 - column 3</td>
+  </tr>
+</table>
+
+```html
+<table>
+  <tr>
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+  </tr>
+  <tr>
+    <td>row 1 - column 1</td>
+    <td colspan="2" align="center">row 1 - column 2 & 3</td>
+  </tr>
+  <tr>
+    <td>row 2 - column 1</td>
+    <td>row 2 - column 2</td>
+    <td>row 2 - column 3</td>
+  </tr>
+</table>
+```
+
+# Table
+
+| Column 1      | Column 2       | Column 3       |
+| ------------- | -------------- | -------------- |
+| Row 1 Column1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column1 | Row 2 Column 2 | Row 2 Column 3 |
+
+> \|Column 1|Column 2|Column 3|<br /> >\|---|---|---|<br /> >\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br /> >\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br />
+
+## Table Align
+
+## Align Center
+
+|   Column 1    |    Column 2    |    Column 3    |
+| :-----------: | :------------: | :------------: |
+| Row 1 Column1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column1 | Row 2 Column 2 | Row 2 Column 3 |
+
+> \|Column 1|Column 2|Column 3|<br /> >\|:---:|:---:|:---:|<br /> >\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br /> >\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br />
+
+## Align Left
+
+| Column 1      | Column 2       | Column 3       |
+| :------------ | :------------- | :------------- |
+| Row 1 Column1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column1 | Row 2 Column 2 | Row 2 Column 3 |
+
+> \|Column 1|Column 2|Column 3|<br /> >\|:---|:---|:---|<br /> >\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br /> >\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br />
+
+## Align Right
+
+|      Column 1 |       Column 2 |       Column 3 |
+| ------------: | -------------: | -------------: |
+| Row 1 Column1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column1 | Row 2 Column 2 | Row 2 Column 3 |
+
+> \|Column 1|Column 2|Column 3|<br /> >\|---:|---:|---:|<br /> >\|Row 1 Column1| Row 1 Column 2| Row 1 Column 3|<br /> >\|Row 2 Column1| Row 2 Column 2| Row 2 Column 3|<br />
+
+See more [Markdown Extras - Table](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table)
+
+- [Rownspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---rowspan)
+- [Colspan](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#table---colspan)
+
+---
+
+> \`\`\`java <br />
+> public static void main(String[] args) {<br />
+> //TODO<br />
+> }<br /> > \`\`\`<br />
+
+# Some links for more in depth learning
+
+:page_facing_up: [Markdown Extras](https://github.com/fefong/markdown_readme/blob/master/markdown-extras.md#markdown---extras)
+
+:page_facing_up: [Wikipedia - Markdown](https://pt.wikipedia.org/wiki/Markdown)
+
+:page_facing_up: [Oficial](https://daringfireball.net/projects/markdown/)
+
+
 # Emoji
 
 Emojis to _tasks & projects_
@@ -344,3 +482,16 @@ Emojis to _tasks & projects_
 |   ©    |    ℃    |    ℉    |    ϴ    |
 |    ϐ    |    ϕ    |    ⁿ    |    ↆ    |
 |    ∴    |    ∞    |    ⊿    |    ⊷    |
+
+
+
+# Emoji
+
+- [Emoji](emoji.md#emoji);
+    - [People](emoji.md#people) - (:blush: ; :hushed: ; :shit:);
+    - [Nature](emoji.md#nature) - (:sunny: ; :snowman: ; :dog:);
+    - [Objects](emoji.md#objects) - (:file_folder: ; :computer: ; :bell:);
+    - [Places](emoji.md#places) - (:rainbow: ; :warning: ; :statue_of_liberty:);
+    - [Symbols](emoji.md#symbols) - (:cancer: ; :x: ; :shipit:);
+- [Kaomoji](emoji.md#kaomoji);
+- [Special-Symbols](emoji.md#special-symbols);
