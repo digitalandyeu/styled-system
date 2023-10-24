@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     <>
       <Gtag />
       <SEO />
-      <ThemeProvider enableSystem={true} attribute="class">
+      <ThemeProvider enableSystem={false} attribute="class">
         <AppLayout>{getLayout(<Component {...pageProps} />)}</AppLayout>
       </ThemeProvider>
     </>
