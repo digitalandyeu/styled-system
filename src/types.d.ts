@@ -12,7 +12,7 @@ export interface IPost {
   meta: IPostMeta
 }
 
-export type Link = {
+export type PageLinkProps = {
   title: string
   description: string
   href: string

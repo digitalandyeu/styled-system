@@ -1,6 +1,7 @@
 import React, { ComponentPropsWithoutRef, ReactNode } from "react"
+import Link from "next/link"
 import { mdxPages } from "@/data"
-import { Link } from "@/types"
+import { PageLinkProps } from "@/types"
 
 interface IMainLayout extends ComponentPropsWithoutRef<"div"> {}
 
@@ -8,12 +9,12 @@ const LinksWrapper = ({
   links,
   blank = false,
 }: {
-  links: Link[]
+  links: PageLinkProps[]
   blank?: boolean
 }): ReactNode => (
   <div className="mb-32 grid gap-4 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
     {links.map(({ title, description, href }) => (
-      <a
+      <Link
         target={blank ? "_blank" : "_self"}
         key={`page-${title}`}
         href={href}
@@ -27,7 +28,7 @@ const LinksWrapper = ({
           </span>
         </h2>
         <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{description}</p>
-      </a>
+      </Link>
     ))}
   </div>
 )

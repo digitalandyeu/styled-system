@@ -2,6 +2,7 @@
   "name": "styled-system",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://digitalandyeu.github.io/styled-system",
   "author": {
     "name": "Andrii Ivashchuk (@digitalandyeu)",
     "url": "https://github.com/andriilive",
@@ -17,7 +18,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "export:localhost": "npm run build && npm run export && npx serve out",
+    "export:production": "export NEXT_PUBLIC_EXPORT=1 && npm run build && npm run export"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",

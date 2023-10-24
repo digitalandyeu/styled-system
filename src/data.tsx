@@ -1,10 +1,10 @@
 import { ReactNode } from "react"
 import packageJson from "@/../package.json"
-import { Link } from "@/types"
+import { PageLinkProps } from "@/types"
 
-const { author, name, repository } = packageJson
+const { author, name, repository, homepage } = packageJson
 
-export const mdxPages: Link[] = [
+export const mdxPages: PageLinkProps[] = [
   {
     title: "Home",
     description: "src/pages/index.tsx",
@@ -27,7 +27,7 @@ export const mdxPages: Link[] = [
   },
 ]
 
-export const defaultNextReadmeLinks: Link[] = [
+export const defaultNextReadmeLinks: PageLinkProps[] = [
   {
     title: "Docs",
     description: "Find in-depth information about Next.js features and API.",
@@ -96,3 +96,5 @@ export const publicRemoteMarkdownFile =
 
 export const readmeBadgesFix = (content: string) =>
   content.replace(/<!-- START BADGES -->[\s\S]*?<!-- END BADGES -->/, "")
+
+export const publicGithubPagesUrl = homepage
