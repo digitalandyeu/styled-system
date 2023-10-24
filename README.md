@@ -38,3 +38,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## References
+
+- [styled-system/styled-system](https://github.com/styled-system/styled-system)
+- [nextjs docs: mdx](https://nextjs.org/docs/pages/building-your-application/configuring/mdx)
+- [eric-ricky/nextjs-mdx-blog-starter](https://github.com/eric-ricky/nextjs-mdx-blog-starter)
+- [ui.shadcn](https://ui.shadcn.com/)
+- [markdown lorem ipsum](https://github.com/FrancisRSTemple/markdown_readme/tree/master)
+- [nextjs markdown implementation (blog)](https://nextjs.org/blog/markdown)
+- [Blog Notion theme](https://notion-blog.vercel.app)
+- [Best theme NextJs : Simple](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
+- [Gist with Themes](https://gist.github.com/andriilive/dce309b39c90a6fbab53b633e421c550)
+- [TailwindCSS Typography](https://tailwindcss.com/docs/typography-plugin)

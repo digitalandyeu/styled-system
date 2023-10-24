@@ -1,0 +1,10 @@
+cache
+package.json
+package-lock.json
+public
+.yarn
+node_modules
+.next
+.contentlayer
+*.draft.*
+draft
