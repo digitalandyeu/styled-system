@@ -1,7 +1,8 @@
-import exp from "constants"
 import { ReactNode } from "react"
-import { author, name, repository } from "@/../package.json"
+import packageJson from "@/../package.json"
 import { Link } from "@/types"
+
+const { author, name, repository } = packageJson
 
 export const mdxPages: Link[] = [
   {

@@ -36,6 +36,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     // img: ResponsiveImage,
     youtube: YouTube,
+    _img: ResponsiveImage,
     wrapper: ({ children }) => MDXWrapperEl(children),
     ...components,
   }

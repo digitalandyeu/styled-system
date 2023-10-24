@@ -5,3 +5,4 @@ node_modules
 draft
 data/content.mdx
 *.mdx
+out

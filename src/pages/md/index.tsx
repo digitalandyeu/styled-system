@@ -52,7 +52,7 @@ export default function Md(props: IMdPageIndex) {
   )
 }
 
-export const getStaticProps = (async (context) => {
+export const getStaticProps = (async (_context) => {
   const posts = getAllPosts()
   return {
     props: {
